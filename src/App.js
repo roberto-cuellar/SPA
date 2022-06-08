@@ -10,6 +10,8 @@ import Switch from '@mui/material/Switch';
 import { pink } from '@mui/material/colors';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import Typography from '@mui/material/Typography';
+
 
 
 function App() {
@@ -39,6 +41,7 @@ function App() {
         }}>
         <Header setMode={setMode} theme={theme} mode={mode}/>
         <Outlet />
+        <Typography my={2} color='action.selected'>Desarrollado por Roberto Cuellar 2022</Typography>
       </Box>
     </ThemeProvider>   
   );
